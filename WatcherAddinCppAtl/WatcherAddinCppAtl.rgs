@@ -1,0 +1,68 @@
+HKCU
+{
+    NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Office
+            {
+                NoRemove Word
+                {
+                    NoRemove Addins
+                    {
+                        WatcherAddinCppAtl.Connect
+                        {
+                            val Description = s 'Watcher Addin Cpp Atl'
+                            val FriendlyName = s 'Watcher Addin Cpp Atl'
+                            val LoadBehavior = d 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+	NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Office
+            {
+                NoRemove PowerPoint
+                {
+                    NoRemove Addins
+                    {
+                        WatcherAddinCppAtl.Connect
+                        {
+                            val Description = s 'Watcher Addin Cpp Atl'
+                            val FriendlyName = s 'Watcher Addin Cpp Atl'
+                            val LoadBehavior = d 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+	NoRemove Software
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Office
+            {
+                NoRemove Excel
+                {
+                    NoRemove Addins
+                    {
+                        WatcherAddinCppAtl.Connect
+                        {
+                            val Description = s 'Watcher Addin Cpp Atl'
+                            val FriendlyName = s 'Watcher Addin Cpp Atl'
+                            val LoadBehavior = d 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

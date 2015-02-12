@@ -1,0 +1,26 @@
+HKCR
+{
+	WatcherAddinCppAtl.WordEvents.1 = s 'WordEvents Class'
+	{
+		CLSID = s '{9CCCC570-FDD5-474F-9BEE-6D37E383F148}'
+	}
+	WatcherAddinCppAtl.WordEvents = s 'WordEvents Class'
+	{		
+		CurVer = s 'WatcherAddinCppAtl.WordEvents.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9CCCC570-FDD5-474F-9BEE-6D37E383F148} = s 'WordEvents Class'
+		{
+			ProgID = s 'WatcherAddinCppAtl.WordEvents.1'
+			VersionIndependentProgID = s 'WatcherAddinCppAtl.WordEvents'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{A23D561E-A27A-483D-876D-F627F59BEC8C}'
+			Version = s '1.0'
+		}
+	}
+}

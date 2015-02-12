@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {E6B5B446-EA90-466B-AC1C-CBF6FF7ECA0E} = s 'PowerPointEvents Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{67138704-A195-4E16-8B21-8D8A737076A3}'
+			Version = s '1.0'
+		}
+	}
+}

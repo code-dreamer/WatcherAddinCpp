@@ -1,0 +1,80 @@
+// WatcherAddinCppAtl.idl : IDL source for WatcherAddinCppAtl
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WatcherAddinCppAtl.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7A5B6CDC-E604-4EA3-9935-2C76A1EF73F4),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IConnect : IDispatch{
+};
+[
+	object,
+	uuid(2ECAC993-8066-4CC9-A224-EAA4239E605F),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IPowerPointEvents : IDispatch{
+};
+[
+	object,
+	uuid(872CE9DA-2E00-428F-8C90-AEC42635E2FF),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IWordEvents : IDispatch{
+};
+[
+	uuid(A23D561E-A27A-483D-876D-F627F59BEC8C),
+	version(1.0),
+]
+interface IExcelEvents : IDispatch{
+};
+[
+	uuid(67138704-A195-4E16-8B21-8D8A737076A3),
+	version(1.0),
+]
+library WatcherAddinCppAtlLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(170C021B-F10F-4F97-BF32-F9D62A18AF71)		
+	]
+	coclass Connect
+	{
+		[default] interface IConnect;
+	};
+	[
+		uuid(9CCCC570-FDD5-474F-9BEE-6D37E383F148)		
+	]
+	coclass PowerPointEvents
+	{
+		[default] interface IPowerPointEvents;
+	};
+	[
+		uuid(98B237F6-DD13-451B-AE6F-9B3D8D824F91)		
+	]
+	coclass ExcelEvents
+	{
+		[default] interface IExcelEvents;
+	};
+	[
+		uuid(98B237F6-DD13-451B-AE6F-9B3D8D824F92)		
+	]
+	coclass WordEvents
+	{
+		[default] interface IWordEvents;
+	};
+};
+
+import "shobjidl.idl";

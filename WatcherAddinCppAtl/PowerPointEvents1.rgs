@@ -1,0 +1,26 @@
+HKCR
+{
+	WatcherAddinCppAtl.PowerPointEvents.1 = s 'PowerPointEvents Class'
+	{
+		CLSID = s '{A5A2D062-E310-459E-B6BD-F97C9E0A3AB3}'
+	}
+	WatcherAddinCppAtl.PowerPointEvents = s 'PowerPointEvents Class'
+	{		
+		CurVer = s 'WatcherAddinCppAtl.PowerPointEvents.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A5A2D062-E310-459E-B6BD-F97C9E0A3AB3} = s 'PowerPointEvents Class'
+		{
+			ProgID = s 'WatcherAddinCppAtl.PowerPointEvents.1'
+			VersionIndependentProgID = s 'WatcherAddinCppAtl.PowerPointEvents'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{A23D561E-A27A-483D-876D-F627F59BEC8C}'
+			Version = s '1.0'
+		}
+	}
+}

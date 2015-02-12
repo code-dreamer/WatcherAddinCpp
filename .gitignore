@@ -1,0 +1,63 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled libraries
+*.dll
+*.lib
+
+# Other
+*.exe
+*.dat
+
+# Build results
+#[Bb]uild/**/*.*
+#![Bb]uild/Release/PeConfigWriter.exe
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+*.pdb
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.tlog
+*.lastbuildstate
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.idb
+*.svclog
+*.scc
+*.exp
+*.mo
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx

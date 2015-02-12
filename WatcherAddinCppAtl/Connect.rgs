@@ -1,0 +1,26 @@
+HKCR
+{
+	WatcherAddinCppAtl.Connect.1 = s 'WatcherAddinCppAtl.Connect'
+	{
+		CLSID = s '{170C021B-F10F-4F97-BF32-F9D62A18AF71}'
+	}
+	WatcherAddinCppAtl.Connect = s 'WatcherAddinCppAtl.Connect'
+	{		
+		CurVer = s 'WatcherAddinCppAtl.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {170C021B-F10F-4F97-BF32-F9D62A18AF71} = s 'WatcherAddinCppAtl.Connect'
+		{
+			ProgID = s 'WatcherAddinCppAtl.Connect.1'
+			VersionIndependentProgID = s 'WatcherAddinCppAtl.Connect'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{A23D561E-A27A-483D-876D-F627F59BEC8C}'
+			Version = s '1.0'
+		}
+	}
+}
